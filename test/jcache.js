@@ -28,12 +28,19 @@ describe("Basic functions", function () {
             jcache.add(2, 5);
             jcache.exists("one").should.be.true;
             jcache.exists(2).should.be.true;
-            jcache.remove("one");
-            jcache.remove(2);
         });
         it("Should return false", function() {
             jcache.exists("someString").should.be.false;
             jcache.exists(3).should.be.false;
         });
     });
+    describe("Clear", function () {
+        it("Should clear cache", function() {
+            jcache.clear().should.be.true;
+        });
+        it("Values should be not exists", function() {
+            jcache.exists("one").should.be.false;
+            jcache.exists(2).should.be.false;
+        })
+    })
 });
