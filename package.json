@@ -1,0 +1,23 @@
+{
+  "name": "jcache",
+  "version": "0.0.1",
+  "description": "node.js library for cache",
+  "main": "./lib/jcache.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ExWei/Jcache-js.git"
+  },
+  "scripts": {
+    "test": "mocha ./test/jcache.js"
+  },
+  "keywords": [
+    "cache",
+    "caching",
+    "perfomance"
+  ],
+  "author": "Alex Schafer",
+  "license": "MIT",
+  "devDependencies": {
+    "should": "~2.1.1"
+  }
+}
