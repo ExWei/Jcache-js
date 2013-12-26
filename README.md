@@ -69,3 +69,14 @@ var jcache = require('jcache');
 jcache.remove("5+5");
 ```
 
+### clear()
+Clear the cache
+
+
+__Example__
+
+```js
+// Clear the cache
+var jcache = require('jcache');
+jcache.clear();
+```
