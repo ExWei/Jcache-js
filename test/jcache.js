@@ -41,6 +41,6 @@ describe("Basic functions", function () {
         it("Values should be not exists", function() {
             jcache.exists("one").should.be.false;
             jcache.exists(2).should.be.false;
-        })
-    })
+        });
+    });
 });
